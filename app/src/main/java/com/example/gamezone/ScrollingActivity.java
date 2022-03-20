@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 import com.example.gamezone.databinding.ActivityScrollingBinding;
 
@@ -23,8 +24,12 @@ public class ScrollingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        WebView webView = (WebView) findViewById(R.id.webview);
+
+
         binding = ActivityScrollingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        webView.loadUrl("file:///android_asset/index.html");
 
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
