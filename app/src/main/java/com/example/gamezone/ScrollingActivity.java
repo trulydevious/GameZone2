@@ -24,12 +24,9 @@ public class ScrollingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        WebView webView = (WebView) findViewById(R.id.webview);
-
-
         binding = ActivityScrollingBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        webView.loadUrl("file:///android_asset/index.html");
+        setContentView(R.layout.content_scrolling);
+
 
         Toolbar toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
