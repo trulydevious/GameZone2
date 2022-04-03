@@ -23,8 +23,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/GameZone"
-        tools:srcCompat="@drawable/GameZone" />
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/username"

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/drawable/font.xml" value="0.2215" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/drawable/profile.xml" value="0.2215" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/drawable/rectangle.xml" value="0.2215" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/drawable/rounded_editbutton.xml" value="0.2682291666666667" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/drawable/rounded_editbutton2.xml" value="0.2682291666666667" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/drawable/rounded_edittext.xml" value="0.2682291666666667" />
@@ -10,13 +13,20 @@
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout-w1240dp/game_activity.xml" value="0.16331994645247658" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout-w1240dp/profile_activity.xml" value="0.16331994645247658" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.12636612021857924" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/activity_scrolling.xml" value="0.1" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/content_scrolling.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/fragment_item.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/fragment_item_list.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/friend_activity.xml" value="0.2" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/friends_container.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/game_activity.xml" value="0.1" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/groups_container.xml" value="0.264" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/login_activity.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/main_activity.xml" value="0.152" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/profile_activity.xml" value="0.1" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/user_data.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/user_profile.xml" value="0.19270833333333334" />
       </map>
     </option>
   </component>
