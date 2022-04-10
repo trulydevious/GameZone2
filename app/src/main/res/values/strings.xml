@@ -21,5 +21,6 @@
         <string name="activity">Activity</string>
         <string name="nickname">Nickname123</string>
         <string name="friend">Friend1</string>
+    <string name="events_list">Events</string>
 
 </resources>

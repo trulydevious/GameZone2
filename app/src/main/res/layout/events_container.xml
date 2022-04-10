@@ -21,7 +21,7 @@
         android:id="@+id/tittleTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/games_list"
+        android:text="@string/events_list"
         android:textSize="24sp"
         android:textColor="@color/white"
         app:layout_constraintHeight_percent="0.15"
@@ -54,7 +54,7 @@
     <include
         android:id="@+id/eventsItemList"
 
-        layout="@layout/fragment_item_list"
+        layout="@layout/fragment_item_list_event"
         android:layout_width="0dp"
         android:layout_height="0dp"
 
