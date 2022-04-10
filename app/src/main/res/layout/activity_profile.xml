@@ -16,7 +16,7 @@
             android:textColor="@color/white"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/groups_container"
+            app:layout_constraintBottom_toTopOf="@id/games_container"
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -29,8 +29,8 @@
 
 
     <include
-        android:id="@+id/groups_container"
-        layout="@layout/groups_container"
+        android:id="@+id/games_container"
+        layout="@layout/games_container"
         android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -52,7 +52,7 @@
         android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/groups_container"
+        app:layout_constraintBottom_toBottomOf="@+id/games_container"
         app:layout_constraintHeight_percent="0.30"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"

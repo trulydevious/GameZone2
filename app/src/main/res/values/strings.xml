@@ -16,7 +16,9 @@
         <string name="off_switch">"off"</string>
         <string name="switch_desc">willing to play?</string>
         <string name="friends_list">Friends</string>
-        <string name="groups_list">Your Groups</string>
+        <string name="groups_list">Groups</string>
+        <string name="games_list">Games</string>
         <string name="nickname">Nickname123</string>
+        <string name="friend">Friend1</string>
 
 </resources>

@@ -10,12 +10,12 @@
     <!-- avatar, switch online/offline-->
 
     <include
-        android:id="@+id/layout_userdata"
-        layout="@layout/user_profile"
+        android:id="@+id/layout_userfriend"
+        layout="@layout/user_friend"
         android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/groups_container"
+        app:layout_constraintBottom_toTopOf="@id/games_container_no_add"
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,12 +28,12 @@
 
 
     <include
-        android:id="@+id/groups_container"
-        layout="@layout/groups_container"
+        android:id="@+id/games_container_no_add"
+        layout="@layout/games_container_no_add"
         android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/layout_userdata"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_userfriend"
         app:layout_constraintHeight_percent="0.30"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -49,7 +49,7 @@
         android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/groups_container"
+        app:layout_constraintBottom_toBottomOf="@+id/games_container_no_add"
         app:layout_constraintHeight_percent="0.30"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
