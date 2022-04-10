@@ -34,8 +34,8 @@
         android:layout_height="24dp"
         android:layout_margin="16dp"
         android:layout_weight="1"
-        android:background="transparent"
+        android:background="@android:color/transparent"
         tools:srcCompat="@android:drawable/ic_menu_delete"
-        android:lgravity="right"/>
+        android:gravity="right"/>
 
 </LinearLayout>

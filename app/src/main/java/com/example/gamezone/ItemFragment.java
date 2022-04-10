@@ -1,4 +1,4 @@
-package com.example.myapplicationconstr;
+package com.example.gamezone;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapplicationconstr.placeholder.PlaceholderContent;
+import com.example.gamezone.placeholder.PlaceholderContent;
 
 /**
  * A fragment representing a list of Items.
@@ -64,7 +64,7 @@ public class ItemFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(PlaceholderContent.ITEMS));
+            recyclerView.setAdapter(new com.example.gamezone.MyItemRecyclerViewAdapter(PlaceholderContent.ITEMS));
         }
         return view;
     }
