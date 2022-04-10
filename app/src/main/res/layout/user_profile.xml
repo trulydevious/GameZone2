@@ -16,8 +16,7 @@
         app:layout_constraintHeight_percent="0.8"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.35"
-
-        tools:srcCompat="@drawable/profile" />
+        android:src="@drawable/profile" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
 

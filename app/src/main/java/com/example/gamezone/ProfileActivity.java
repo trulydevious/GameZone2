@@ -14,7 +14,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        TextView tvName = findViewById(R.id.groups_container);
-
     }
+
+
 }
