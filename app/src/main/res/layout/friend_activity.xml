@@ -44,8 +44,8 @@
         />
 
     <include
-        android:id="@+id/friends_container"
-        layout="@layout/friends_container"
+        android:id="@+id/stats_friend_container"
+        layout="@layout/stats_friend_container"
         android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="0dp"

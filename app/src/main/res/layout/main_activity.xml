@@ -9,7 +9,6 @@
 
     <!-- avatar, switch online/offline-->
 
-
     <include
         android:id="@+id/layout_userdata"
         layout="@layout/user_data"
