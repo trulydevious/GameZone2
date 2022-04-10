@@ -98,7 +98,7 @@
         android:layout_height="45dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="REGISTER"
+        android:text="Sign up"
         android:textAlignment="center"
         android:gravity="center"
         android:textColor="@color/white"
