@@ -46,9 +46,14 @@
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout-w1240dp/game_activity.xml" value="0.16331994645247658" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout-w1240dp/profile_activity.xml" value="0.16331994645247658" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.12636612021857924" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/activity_profile.xml" value="0.1609375" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/activity_scrolling.xml" value="0.1" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/content_scrolling.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/fragment_item.xml" value="0.1" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/fragment_item_event.xml" value="0.1109375" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/fragment_item_list.xml" value="0.1109375" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/friend_activity.xml" value="0.2" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/friends_container.xml" value="0.1609375" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/game_activity.xml" value="0.1" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/games_container.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/login_activity.xml" value="0.21331521739130435" />
@@ -58,6 +63,7 @@
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/user_data.xml" value="0.18704710144927536" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/user_friend.xml" value="0.18704710144927536" />
         <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/layout/user_profile.xml" value="0.18704710144927536" />
+        <entry key="..\:/Users/weran/AndroidStudioProjects/GameZone/app/src/main/res/xml/network_security_config.xml" value="0.15885416666666666" />
       </map>
     </option>
   </component>
