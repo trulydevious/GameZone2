@@ -1,6 +1,8 @@
 package com.example.gamezone;
 
-public class Game {
+import java.io.Serializable;
+
+public class Game implements Serializable {
 
     private int game_id;
     private String name;

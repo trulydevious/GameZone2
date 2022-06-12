@@ -24,6 +24,8 @@ import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.util.ArrayList;
+
 public class ProfileActivity extends AppCompatActivity {
 
     private String friend_Id = "";
@@ -138,8 +140,9 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void onResponseUserGames(String response) {
         Log.i("mirek", "mirek");
-//        Gson gson =  new GsonBuilder().setPrettyPrinting().create();
-//        Game game = gson.fromJson(response, Game.class);
+        Gson gson =  new GsonBuilder().setPrettyPrinting().create();
+        ArrayList<Game> games = gson.fromJson(response, ArrayList.class);
+        Log.i("lista gier", String.valueOf(games));
 //        tvGames.setText(game.getName());
     }
 
