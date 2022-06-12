@@ -54,7 +54,7 @@
         <include
             android:id="@+id/groupsItemList"
 
-            layout="@layout/fragment_item_list"
+            layout="@layout/fragment_item_list_games"
             android:layout_width="0dp"
             android:layout_height="0dp"
 

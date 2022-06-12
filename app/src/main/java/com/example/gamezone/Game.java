@@ -4,20 +4,23 @@ import java.io.Serializable;
 
 public class Game implements Serializable {
 
-    private int game_id;
+    private int id_game;
     private String name;
 
     public Game(int game_id, String name) {
-        this.game_id = game_id;
+        this.id_game = id_game;
         this.name = name;
     }
 
-    public int getGame_id() {
-        return game_id;
+    public Game() {
     }
 
-    public void setGame_id(int game_id) {
-        this.game_id = game_id;
+    public int getId_game() {
+        return id_game;
+    }
+
+    public void setId_game(int id_game) {
+        this.id_game = id_game;
     }
 
     public String getName() {
@@ -26,5 +29,13 @@ public class Game implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Game{" +
+                "id=" + id_game +
+                ", nazwa='" + name + '\'' +
+                '}';
     }
 }

@@ -1,18 +1,16 @@
 package com.example.gamezone;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +21,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
 
 import java.util.ArrayList;
 
@@ -37,6 +36,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        Log.i("start", "start");
 
         String result = getIntent().getStringExtra("loggedUser");
         user = Integer.parseInt(result);
@@ -141,9 +141,24 @@ public class ProfileActivity extends AppCompatActivity {
     private void onResponseUserGames(String response) {
         Log.i("mirek", "mirek");
         Gson gson =  new GsonBuilder().setPrettyPrinting().create();
-        ArrayList<Game> games = gson.fromJson(response, ArrayList.class);
-        Log.i("lista gier", String.valueOf(games));
-//        tvGames.setText(game.getName());
+        Log.i("lista gier", response);
+        ArrayList<?> arrayGames = gson.fromJson(response, ArrayList.class);
+        ArrayList<Game> arrayGames2 = new ArrayList<>();
+        for (Object game : arrayGames) {
+            Gson gson1 = new Gson();
+            JsonElement jsonElement = gson1.toJsonTree(game);
+            Game game1 = gson1.fromJson(jsonElement, Game.class);
+            arrayGames2.add(game1);
+        }
+        Log.i("gamessss", arrayGames2.toString());
+        
+//        Tu się inicjuje adapter wyświetlający loty
+        RecyclerView rvGames = findViewById(R.id.gamesRecycleView);
+        GameAdapter adapter = new GameAdapter(arrayGames2);
+        adapter.notifyDataSetChanged();
+        rvGames.setHasFixedSize(true);
+        rvGames.setLayoutManager(new LinearLayoutManager(this));
+        rvGames.setAdapter(adapter);
     }
 
 
