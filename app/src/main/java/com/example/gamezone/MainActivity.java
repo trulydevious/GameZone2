@@ -19,6 +19,7 @@ import com.android.volley.toolbox.Volley;
 public class MainActivity extends AppCompatActivity {
 
     private int user;
+    private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         simpleSwitch.setTextOff("off");
         simpleSwitch.setTextOn("on");
         String result = getIntent().getStringExtra("loggedUser");
+        String result2 = getIntent().getStringExtra("userName");
         user = Integer.parseInt(result);
+        userName = result2;
         Log.i("user", String.valueOf(user));
 
 //        //pobranie grup
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     public void onProfileClicked (View view){
         Intent intent = new Intent(this, ProfileActivity.class);
         intent.putExtra("loggedUser", String.valueOf(user));
+        intent.putExtra("userName", userName);
         startActivity(intent);
 
     }

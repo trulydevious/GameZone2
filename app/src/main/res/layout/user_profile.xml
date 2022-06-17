@@ -48,7 +48,7 @@
             android:src="@drawable/dot" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/userNameProfile"
             android:layout_width="0dp"
             android:layout_height="0dp"
 

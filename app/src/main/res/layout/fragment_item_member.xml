@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="370dp"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:gravity="center_vertical|center_horizontal"
-    tools:context=".ItemFragmentMembers">
+    >
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="5dp"
+        android:layout_height="14dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="right"
+        android:src="@drawable/dot" />
 
     <ImageView
         android:id="@+id/item_img"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="20dp"
+        android:layout_height="34dp"
         android:layout_margin="8dp"
         android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars"
         android:gravity="left"
+        app:srcCompat="@drawable/friend"
         />
 
     <TextView
-        android:id="@+id/content"
+        android:id="@+id/contentFriend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
@@ -29,15 +39,22 @@
         android:textColor="@color/white"
         />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="16dp"
+    <TextView
+        android:id="@+id/contentFriendID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/deleteBtnFriend"
+        android:layout_width="10dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
         android:layout_weight="1"
-        android:background="@android:color/transparent"
-        android:gravity="right"
-        android:src="@drawable/dot" />
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:tint="@color/white" />
 
 
 </LinearLayout>

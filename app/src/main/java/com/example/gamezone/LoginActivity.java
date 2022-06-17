@@ -61,6 +61,7 @@ public class LoginActivity extends AppCompatActivity {
         if (Integer.parseInt(response) != 0) {
             Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra("loggedUser", response.toString());
+            intent.putExtra("userName", username.getText().toString());
             startActivity(intent);
         } else {
             Toast.makeText(this, "Incorrect login or password", Toast.LENGTH_LONG).show();
@@ -76,5 +77,10 @@ public class LoginActivity extends AppCompatActivity {
     public void finishLoginActivity (View view){ finish(); }
 
 
+    public void onRegisterClicked(View view) {
+        Log.i("eeeeee", String.valueOf(RegisterActivity.class));
+        Intent intent2 = new Intent(this, RegisterActivity.class);
+        startActivity(intent2);
+    }
 
 }

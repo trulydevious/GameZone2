@@ -28,6 +28,14 @@
         android:gravity="center"
         android:textColor="@color/white"
         />
+
+    <TextView
+        android:id="@+id/contentGamesID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/transparent"
+        />
+
     <ImageButton
         android:id="@+id/deleteBtnGame"
         android:layout_width="10dp"
@@ -35,8 +43,8 @@
         android:layout_margin="8dp"
         android:layout_weight="1"
         android:backgroundTint="#00FFFFFF"
-        android:tint="@color/white"
         app:srcCompat="@android:drawable/ic_menu_delete"
+        app:tint="@color/white"
         />
 
 
