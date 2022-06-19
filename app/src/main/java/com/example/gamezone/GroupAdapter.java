@@ -1,6 +1,7 @@
 package com.example.gamezone;
 
-
+import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,13 +22,13 @@ import java.util.ArrayList;
 /**
  * Klasa służąca do inicjowania obiektów RecycleView w celu ich wyświetlenia.
  */
-public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendsViewHolder> {
-    private ArrayList<Friend> friends;
+public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.GroupViewHolder> {
+    private ArrayList<Group> groups;
     private int user_id;
     private DeleteBtnClicked deleteBtnClicked;
 
-    public FriendsAdapter(ArrayList<Friend> friends, int user, DeleteBtnClicked deleteBtnClicked) {
-        this.friends = friends;
+    public GroupAdapter(ArrayList<Group> groups, int user, DeleteBtnClicked deleteBtnClicked) {
+        this.groups = groups;
         this.user_id = user;
         this.deleteBtnClicked = deleteBtnClicked;
     }
@@ -40,10 +41,10 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendsV
      */
     @NonNull
     @Override
-    public FriendsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public GroupViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem = layoutInflater.inflate(R.layout.fragment_item_friend, parent, false);
-        FriendsViewHolder flightViewHolder = new FriendsViewHolder(listItem);
+        View listItem = layoutInflater.inflate(R.layout.fragment_item_groups, parent, false);
+        GroupViewHolder flightViewHolder = new GroupViewHolder(listItem);
         return flightViewHolder;
     }
 
@@ -53,12 +54,12 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendsV
      * @param position
      */
     @Override
-    public void onBindViewHolder(@NonNull FriendsViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull GroupViewHolder holder, int position) {
 
         //holder.imPhoto.setImageResource(flights.get(position).getImgID());
 
-        holder.contentFriend.setText(String.valueOf(friends.get(position).getEmail()));
-        holder.contentFriendID.setText(String.valueOf(friends.get(position).getId_user()));
+        holder.contentGroup.setText(String.valueOf(groups.get(position).getName()));
+        holder.contentGroupID.setText(String.valueOf(groups.get(position).getId_group()));
     }
 
     /**
@@ -67,35 +68,35 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendsV
      */
     @Override
     public int getItemCount() {
-        return friends.size();
+        return groups.size();
     }
 
     /**
      * Obiekt RecycleView - flight_row.xml.
      * Do obiektu jezt przypisana referencja przypisanego lotu - OpenSky flight
      */
-    public class FriendsViewHolder extends RecyclerView.ViewHolder{
+    public class GroupViewHolder extends RecyclerView.ViewHolder{
         //ImageView imPhoto;
-        TextView contentFriend;
-        TextView contentFriendID;
+        TextView contentGroup;
+        TextView contentGroupID;
 
-        public FriendsViewHolder(@NonNull View itemView){
+        public GroupViewHolder(@NonNull View itemView){
             super(itemView);
-            contentFriend = itemView.findViewById(R.id.contentFriend);
-            contentFriendID = itemView.findViewById(R.id.contentFriendID);
+            contentGroup = itemView.findViewById(R.id.contentGroup);
+            contentGroupID = itemView.findViewById(R.id.contentGroupID);
 
             /**
              * Metoda opisująca działanie przycisku usuwania dodanego lotu
              */
-            itemView.findViewById(R.id.deleteBtnFriend).setOnClickListener(new View.OnClickListener() {
+            itemView.findViewById(R.id.deleteBtnGroup).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 //                    profile.removeItem(flight);
 
-                    String url = "http://192.168.1.51:8081/api/usersusers/delete?friend_id=" + contentFriendID.getText().toString()
-                            + "&user_id=" + user_id;
-                    Log.i("mesDeleteFriend", url);
-                    Log.i("usuwamy usera", url);
+                    String url = "http://192.168.1.51:8081/api/group/delete/user?user_id=" + user_id
+                            + "&group_id=" + contentGroupID.getText().toString();
+                    Log.i("mesLeaveGroup", url);
+
                     RequestQueue queue = Volley.newRequestQueue(v.getContext().getApplicationContext());
                     StringRequest stringRequest = new StringRequest(Request.Method.DELETE, url, this::onResponse, this::onErrorResponse);
                     queue.add(stringRequest);
@@ -112,9 +113,22 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendsV
                 }
 
             });
+
+            itemView.findViewById(R.id.item_img_group).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(v.getContext(), GroupActivity.class);
+                    intent.putExtra("groupName", contentGroup.getText().toString());
+                    intent.putExtra("groupID", String.valueOf(contentGroupID.getText()));
+                    v.getContext().startActivity(intent);
+
+
+
+                }
+
+            });
         }
     }
 
 }
-
 

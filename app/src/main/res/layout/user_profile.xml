@@ -18,6 +18,22 @@
         app:layout_constraintWidth_percent="0.35"
         android:src="@drawable/profile" />
 
+    <ImageButton
+        android:id="@+id/btnRefresh"
+        android:onClick="refreshClicked"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:background="#00FFFFFF"
+        app:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        tools:srcCompat="@android:drawable/ic_popup_sync" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
 
             android:layout_width="0dp"

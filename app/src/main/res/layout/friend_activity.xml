@@ -9,55 +9,55 @@
 
     <!-- avatar, switch online/offline-->
 
-    <include
-        android:id="@+id/layout_userfriend"
-        layout="@layout/user_friend"
-        android:textColor="@color/white"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/games_container_no_add"
-        app:layout_constraintHeight_percent="0.2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43"
-        app:layout_constraintWidth_percent="0.9"
+<!--    <include-->
+<!--        android:id="@+id/layout_userfriend"-->
+<!--        layout="@layout/user_friend"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/games_container_no_add"-->
+<!--        app:layout_constraintHeight_percent="0.2"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.43"-->
+<!--        app:layout_constraintWidth_percent="0.9"-->
 
-        />
+<!--        />-->
 
 
-    <include
-        android:id="@+id/games_container_no_add"
-        layout="@layout/games_container_no_add"
-        android:textColor="@color/white"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/layout_userfriend"
-        app:layout_constraintHeight_percent="0.30"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.66"
-        app:layout_constraintWidth_percent="0.9"
-        />
+<!--    <include-->
+<!--        android:id="@+id/games_container_no_add"-->
+<!--        -->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/layout_userfriend"-->
+<!--        app:layout_constraintHeight_percent="0.30"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.66"-->
+<!--        app:layout_constraintWidth_percent="0.9"-->
+<!--        />-->
 
-    <include
-        android:id="@+id/stats_friend_container"
-        layout="@layout/stats_friend_container"
-        android:textColor="@color/white"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/games_container_no_add"
-        app:layout_constraintHeight_percent="0.30"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintWidth_percent="0.9"
-        />
+<!--    <include-->
+<!--        android:id="@+id/stats_friend_container"-->
+<!--        layout="@layout/stats_friend_container"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/games_container_no_add"-->
+<!--        app:layout_constraintHeight_percent="0.30"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.5"-->
+<!--        app:layout_constraintWidth_percent="0.9"-->
+<!--        />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

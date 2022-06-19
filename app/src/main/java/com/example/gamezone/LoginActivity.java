@@ -21,6 +21,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+//import com.example.gamezone.cipher.*;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -35,9 +36,9 @@ public class LoginActivity extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
+        //password = Sha512Cipher.hashString(password);
 
 }
-
     public void onButLoginClicked (View view){
 
 
@@ -53,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
             StringRequest stringRequest = new StringRequest(Request.Method.GET, url, this::onResponse, this::onErrorResponse);
             queue.add(stringRequest);
     }
+
 
 
 

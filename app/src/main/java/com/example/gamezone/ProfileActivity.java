@@ -117,6 +117,10 @@ public class ProfileActivity extends AppCompatActivity implements DeleteBtnClick
 
     }
 
+    public void refreshClicked (View view){
+        recreate();
+    }
+
     public void onAddFriendClicked (View view){
 //        Toast.makeText(this, "CLICKED", Toast.LENGTH_LONG).show();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -177,6 +181,7 @@ public class ProfileActivity extends AppCompatActivity implements DeleteBtnClick
 
 //        Tu się inicjuje adapter wyświetlający loty
         RecyclerView rvFriends = findViewById(R.id.friendsRecycleView);
+        rvFriends.setNestedScrollingEnabled(false);
         FriendsAdapter adapter = new FriendsAdapter(arrayFriends2, user, deleteBtnClicked);
 //        adapter.notifyDataSetChanged();
         rvFriends.setHasFixedSize(true);
@@ -205,6 +210,7 @@ public class ProfileActivity extends AppCompatActivity implements DeleteBtnClick
         
 //        Tu się inicjuje adapter wyświetlający loty
         RecyclerView rvGames = findViewById(R.id.gamesRecycleView);
+        rvGames.setNestedScrollingEnabled(false);
         GameAdapter adapter = new GameAdapter(arrayGames2, user, deleteBtnClicked);
 //        adapter.notifyDataSetChanged();
         rvGames.setHasFixedSize(true);
