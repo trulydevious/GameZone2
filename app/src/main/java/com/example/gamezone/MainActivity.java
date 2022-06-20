@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity implements DeleteBtnClicked 
         ImageButton addGroupButton = findViewById(R.id.addGroupButton);
 
         //grupy - wszystkie dla danego usera
-        String url = "http://192.168.1.51:8081/api/usersgroups/all?user_id=" + user;
+        String url = "http://192.168.43.43:8081/api/usersgroups/all?user_id=" + user;
         Log.i("mesGetUsersGroups", url);
 
         //eventy -  wszystkie dla danego usera /usersevents/all
-        String url2 = "http://192.168.1.51:8081/api/usersevents/all?user_id=" + user;
+        String url2 = "http://192.168.43.43:8081/api/usersevents/all?user_id=" + user;
         Log.i("mesGetUsersEvents", url2);
 
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements DeleteBtnClicked 
     public void onAddGroupClicked(View view) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Input group id:");
+        builder.setTitle("Input group name:");
         // Set up the input
         final EditText input = new EditText(this);
         // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity implements DeleteBtnClicked 
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 addGroup = input.getText().toString();
-                String url = "http://192.168.1.51:8081/api/admin/group/user?user_id=" + user
-                        + "&group_id=" + addGroup;
-                Log.i("mesAddGame", url);
+                String url = "http://192.168.43.43:8081/api/admin/group?user_id=" + user
+                        + "&name=" + addGroup;
+                Log.i("mesAddGroup", url);
 
                 RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url, this::onResponse, this::onErrorResponse);

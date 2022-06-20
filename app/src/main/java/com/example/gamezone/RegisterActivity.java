@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
     public void onButSignUpClicked(View view) {
 
         if (!new_username.getText().equals("") && !new_password.getText().equals("")) {
-            String url = "http://192.168.1.51:8081/api/user?email=" + new_username.getText().toString() + "&password=" + new_password.getText().toString();
+            String url = "http://192.168.43.43:8081/api/user?email=" + new_username.getText().toString() + "&password=" + new_password.getText().toString();
             Log.i("mesNewUser", url);
 
             RequestQueue queue = Volley.newRequestQueue(this);
@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void onResponse(String response) {
 
-        String url = "http://192.168.1.51:8081/api/user/login?login=" + new_username.getText().toString()
+        String url = "http://192.168.43.43:8081/api/user/login?login=" + new_username.getText().toString()
                 + "&password=" + new_password.getText().toString();
 
 //        String url = "http://192.168.43.43:8081/api/user/login?login=" + new_username.getText().toString()

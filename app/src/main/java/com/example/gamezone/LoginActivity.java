@@ -42,11 +42,11 @@ public class LoginActivity extends AppCompatActivity {
     public void onButLoginClicked (View view){
 
 
-            String url = "http://192.168.1.51:8081/api/user/login?login=" + username.getText().toString()
-                            + "&password=" + password.getText().toString();
+//            String url = "http://192.168.1.51:8081/api/user/login?login=" + username.getText().toString()
+//                            + "&password=" + password.getText().toString();
 
-//        String url = "http://192.168.43.43:8081/api/user/login?login=" + username.getText().toString()
-//                + "&password=" + password.getText().toString();
+        String url = "http://192.168.43.43:8081/api/user/login?login=" + username.getText().toString()
+                + "&password=" + password.getText().toString();
 
             Log.i("mes", url);
 

@@ -53,10 +53,10 @@ public class ProfileActivity extends AppCompatActivity implements DeleteBtnClick
         TextView userNameProfile = findViewById(R.id.userNameProfile);
         userNameProfile.setText(userName);
 
-        String url = "http://192.168.1.51:8081/api/usersgames/all?user_id=" + user;
+        String url = "http://192.168.43.43:8081/api/usersgames/all?user_id=" + user;
         Log.i("mesGetUsersGames", url);
 
-        String url2 = "http://192.168.1.51:8081/api/usersusers/all?user_id=" + user;
+        String url2 = "http://192.168.43.43:8081/api/usersusers/all?user_id=" + user;
         Log.i("mesGetUsersFriends", url2);
 
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -88,7 +88,7 @@ public class ProfileActivity extends AppCompatActivity implements DeleteBtnClick
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 addGame = input.getText().toString();
-                String url = "http://192.168.1.51:8081/api/usersgames/add?game_id=" + addGame
+                String url = "http://192.168.43.43:8081/api/usersgames/add?game_id=" + addGame
                         + "&user_id=" + user;
                 Log.i("mesAddGame", url);
 
@@ -135,7 +135,7 @@ public class ProfileActivity extends AppCompatActivity implements DeleteBtnClick
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 addFriend = input.getText().toString();
-                String url = "http://192.168.1.51:8081/api/usersusers/add?friend_id=" + addFriend
+                String url = "http://192.168.43.43:8081/api/usersusers/add?friend_id=" + addFriend
                         + "&user_id=" + user;
                 Log.i("mesAddFriend", url);
 

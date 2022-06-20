@@ -46,11 +46,11 @@ public class GroupActivity extends AppCompatActivity {
         TextView grouNameTitle = findViewById(R.id.textViewGroupName);
         grouNameTitle.setText(name);
 
-        String url = "http://192.168.1.51:8081/api/usersgroups/group?group_id=" + String.valueOf(groupID);
+        String url = "http://192.168.43.43:8081/api/usersgroups/group?group_id=" + String.valueOf(groupID);
         Log.i("mesGetUsersFromGroup", url);
 
 
-        String url2 = "http://192.168.1.51:8081/api/groupsevents/all?group_id=" + String.valueOf(groupID);
+        String url2 = "http://192.168.43.43:8081/api/groupsevents/all?group_id=" + String.valueOf(groupID);
         Log.i("mesGetEventsFromGroup", url2);
 
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -120,7 +120,7 @@ public class GroupActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 addUser = input.getText().toString();
-                String url = "http://192.168.1.51:8081/api/admin/group/user?user_id=" + addUser
+                String url = "http://192.168.43.43:8081/api/admin/group/user?user_id=" + addUser
                         + "&group_id=" + String.valueOf(groupID);
                 Log.i("mesAddUserToGroup", url);
 
@@ -185,7 +185,7 @@ public class GroupActivity extends AppCompatActivity {
                addEventDate = input2.getText().toString(); //date
 //                addGroupID = input3.getText().toString(); // group
 
-               String url = "http://192.168.1.51:8081/api/admin/event?name=" + addEvent
+               String url = "http://192.168.43.43:8081/api/admin/event?name=" + addEvent
                + "&date=" + addEventDate + "&group_id=" + addGroupID;
 
                Log.i("mesAddEvent", url);

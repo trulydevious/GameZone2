@@ -93,7 +93,7 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.GroupViewHol
                 public void onClick(View v) {
 //                    profile.removeItem(flight);
 
-                    String url = "http://192.168.1.51:8081/api/group/delete/user?user_id=" + user_id
+                    String url = "http://192.168.43.43:8081/api/group/delete/user?user_id=" + user_id
                             + "&group_id=" + contentGroupID.getText().toString();
                     Log.i("mesLeaveGroup", url);
 

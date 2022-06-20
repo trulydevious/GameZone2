@@ -92,7 +92,7 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendsV
                 public void onClick(View v) {
 //                    profile.removeItem(flight);
 
-                    String url = "http://192.168.1.51:8081/api/usersusers/delete?friend_id=" + contentFriendID.getText().toString()
+                    String url = "http://192.168.43.43:8081/api/usersusers/delete?friend_id=" + contentFriendID.getText().toString()
                             + "&user_id=" + user_id;
                     Log.i("mesDeleteFriend", url);
                     Log.i("usuwamy usera", url);

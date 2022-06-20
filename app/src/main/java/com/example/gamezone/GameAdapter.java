@@ -93,7 +93,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
                 public void onClick(View v) {
 //                    profile.removeItem(flight);
 
-                    String url = "http://192.168.1.51:8081/api/usersgames/delete?game_id=" + contentGamesID.getText().toString()
+                    String url = "http://192.168.43.43:8081/api/usersgames/delete?game_id=" + contentGamesID.getText().toString()
                         + "&user_id=" + user_id;
                     Log.i("mesDeleteGame", url);
 
